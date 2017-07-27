@@ -1,0 +1,13 @@
+{
+  "default": {
+    "attributes": {
+      "name": {
+        "required": true
+      },
+      "horsepower": {
+        "required": true
+      }
+    },
+    "displayedAttribute": "name"
+  }
+}

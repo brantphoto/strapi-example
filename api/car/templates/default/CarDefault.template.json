@@ -1,0 +1,12 @@
+{
+  "default": {
+    "attributes": {
+      "name": {
+        "required": true
+      },
+      "model": {},
+      "engine": {}
+    },
+    "displayedAttribute": "name"
+  }
+}

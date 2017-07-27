@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /engine": {
+      "controller": "Engine",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /engine/:id": {
+      "controller": "Engine",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /engine": {
+      "controller": "Engine",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /engine/:id": {
+      "controller": "Engine",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /engine/:id": {
+      "controller": "Engine",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /engine/:parentId/:relation": {
+      "controller": "Engine",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /engine/:parentId/:relation/:id": {
+      "controller": "Engine",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}
